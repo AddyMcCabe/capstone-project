@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(23, 22, 22);
+    background-image: url('images/marvel-logo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container { 
+    padding: 2%;
+    background-position: center; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(225, 225, 225, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+#search-btn {
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #cac7ff;
+    display: flex;
+    justify-content: end;
+    
+}
+
+::placeholder {
+    color: #cac7ff;
+}
+
+.search-icon {
+    height: 30%;
+    width: 30%;
+    
+}
