@@ -5,8 +5,8 @@ require('dotenv').config();
 
 const app = express();
 
-console.log(process.env.PRIVATE_KEY);
-console.log(process.env.PUBLIC_KEY);
+const privateKey = (process.env.PRIVATE_KEY);
+const publicKey = (process.env.PUBLIC_KEY);
 
 
 
@@ -21,7 +21,9 @@ app.get('/styles', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/styles.css'))
 })
 
-
+app.get('/gateway.marvel.com/v1/public/characters?ts=1&apikey=b6b72ca54e82d39459344ac31c187566&hash=aea080d9b15055a44c83d8469af5da70', (req, res) => {
+    console.log(req.query);
+})
 
 
 

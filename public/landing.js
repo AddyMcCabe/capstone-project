@@ -10,4 +10,4 @@ function searchCharacter(event) {
 } 
 
 
-form.addEventListener('submit', searchCharacter)
+form.addEventListener('click', searchCharacter)
