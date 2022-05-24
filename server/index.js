@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 
 console.log(process.env.PRIVATE_KEY);
-process.env.PUBLIC_KEY;
+console.log(process.env.PUBLIC_KEY);
 
 
 
@@ -14,7 +14,7 @@ process.env.PUBLIC_KEY;
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/heroSearch.html'))
+    res.sendFile(path.join(__dirname, '../public/landing.html'))
 })
 
 app.get('/styles', (req, res) => {
