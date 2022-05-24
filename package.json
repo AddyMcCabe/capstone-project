@@ -4,5 +4,25 @@
     "express": "^4.18.1",
     "md5": "^2.3.0",
     "sequelize": "^6.20.0"
-  }
+  },
+  "name": "capstone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AddyMcCabe/capstone-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AddyMcCabe/capstone-project/issues"
+  },
+  "homepage": "https://github.com/AddyMcCabe/capstone-project#readme",
+  "description": ""
 }
