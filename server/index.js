@@ -10,7 +10,7 @@ const privateKey = (process.env.PRIVATE_KEY);
 const publicKey = (process.env.PUBLIC_KEY);
 const ts = 1;
 const hash = md5(ts, privateKey, publicKey)
-console.log(hash)
+
 
 
 
