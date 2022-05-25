@@ -16,6 +16,7 @@ function searchCharacter(event) {
         //         thumbnail: character.results.thumbnail
         //     })
         // });
+        hero.value = '';
         console.log(character)
 
     })
