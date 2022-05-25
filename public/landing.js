@@ -1,3 +1,5 @@
+
+
 const searchBtn = document.querySelector('#search-btn');
 const hero = document.querySelector('#char-search');
 
@@ -9,13 +11,23 @@ function searchCharacter(event) {
     .then((res) => {
         let characterName = res.data.data.results[0].name;
         let characterDescription = res.data.data.results[0].description;
-        let characterImage = res.data.data.results[0].thumbnail.extension;
+        let characterImage = res.data.data.results[0].thumbnail.path;
+        
+        // let charObj = {
+        //     name: characterName,
+        //     description: characterDescription, 
+        //     image: characterImage
+        // }
+        //  const jsonChar = JSON.stringify(charObj);
+        //  window.localStorage.setItem('charObj', jsonChar)
 
         hero.value = '';
         console.log(characterImage)
-
     })
 } 
 
+ function createCard(data) {
+   
+ }
 
 searchBtn.addEventListener('click', searchCharacter)
