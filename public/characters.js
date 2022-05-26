@@ -11,21 +11,10 @@ function backPage() {
 }
 
 function displayCharacter() {
-   // for(let i = 0; i < localStorage.length; i++) {
-   //    const key = localStorage.key(i);
-   //    const value = localStorage.getItem(key);
    document.querySelector('#name').textContent = storedName;
    document.querySelector('.character-img').src = storedImage;
    document.querySelector('.dscrpt').textContent = storedDscrpt;
-      console.log(storedDscrpt)
       
-    
-    
-    
-  
-
-
-
 }
 
 backBtn.addEventListener('click', backPage)

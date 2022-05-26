@@ -13,24 +13,13 @@ function searchCharacter(event) {
         let characterDescription = res.data.data.results[0].description;
         let characterImage = res.data.data.results[0].thumbnail.path;
         
-        let charObj = {
-            name: characterName,
-            description: characterDescription, 
-            image: characterImage
-        }
-         const charName = JSON.stringify(characterName);
-         window.localStorage.setItem('name', charName);
-         const charDscrpt = JSON.stringify(characterDescription);
-         window.localStorage.setItem('dscrpt', charDscrpt);
-         const charImg = JSON.stringify(characterImage);
+        
+         window.localStorage.setItem('name', characterName);
+         window.localStorage.setItem('dscrpt', characterDescription);
          window.localStorage.setItem('img', characterImage);
          window.location.href = 'http://127.0.0.1:5500/public/characters.html'
          
-
-
-        hero.value = '';
-      
-        
+        hero.value = '';   
     })
 } 
 
