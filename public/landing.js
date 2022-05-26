@@ -17,7 +17,7 @@ function searchCharacter(event) {
          window.localStorage.setItem('name', characterName);
          window.localStorage.setItem('dscrpt', characterDescription);
          window.localStorage.setItem('img', characterImage);
-         window.location.href = 'http://127.0.0.1:5500/public/characters.html'
+         window.location.href = 'http://localhost:4005/characters'
          
         hero.value = '';   
     })

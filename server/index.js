@@ -16,13 +16,11 @@ const hash = md5(ts, privateKey, publicKey)
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/landing.html'))
+app.get('/characters', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/characters.html'))
 })
 
-app.get('/styles', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/styles.css'))
-})
+
 
 
 

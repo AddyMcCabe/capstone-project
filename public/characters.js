@@ -7,12 +7,12 @@ const storedImage = localStorage.getItem('img');
 
 
 function backPage() {
-   location.href = 'http://127.0.0.1:5500/public/landing.html'
+   location.href = 'http://localhost:4005'
 }
 
 function displayCharacter() {
    document.querySelector('#name').textContent = storedName;
-   document.querySelector('.character-img').src = storedImage;
+   document.querySelector('.character-img').src = storedImage + '.jpg';
    document.querySelector('.dscrpt').textContent = storedDscrpt;
       
 }
