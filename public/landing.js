@@ -18,10 +18,14 @@ function searchCharacter(event) {
             description: characterDescription, 
             image: characterImage
         }
-         const jsonChar = JSON.stringify(charObj);
-         window.localStorage.setItem('charObj', jsonChar)
+         const charName = JSON.stringify(characterName);
+         window.localStorage.setItem('name', charName);
+         const charDscrpt = JSON.stringify(characterDescription);
+         window.localStorage.setItem('dscrpt', charDscrpt);
+         const charImg = JSON.stringify(characterImage);
+         window.localStorage.setItem('img', characterImage);
          window.location.href = 'http://127.0.0.1:5500/public/characters.html'
-         const getItem = localStorage.getItem('charObj')
+         
 
 
         hero.value = '';

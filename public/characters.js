@@ -6,14 +6,16 @@ function backPage() {
 }
 
 function displayCharacter() {
-    const getCharacter = localStorage.getItem('charObj')
-    console.log(getCharacter)
-    let characterCard = document.createElement('form');
- getCharacter.name = document.createElement('p');
- getCharacter.description = document.createElement('p')
- getCharacter.image = document.createElement('img')
+   for(let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      const value = localStorage.getItem(key);
+      console.log(value)
+    }
+    
+    
+  
 
-characterCard.appendChild(getCharacter.name, getCharacter.description, getCharacter.image);
+
 
 }
 
