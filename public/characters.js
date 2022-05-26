@@ -1,4 +1,9 @@
-backBtn = document.getElementById('back-btn');
+const backBtn = document.getElementById('back-btn');
+const storedName = localStorage.getItem('name');
+const storedDscrpt = localStorage.getItem('dscrpt');
+const storedImage = localStorage.getItem('img');
+
+
 
 
 function backPage() {
@@ -6,11 +11,15 @@ function backPage() {
 }
 
 function displayCharacter() {
-   for(let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      const value = localStorage.getItem(key);
-      console.log(value)
-    }
+   // for(let i = 0; i < localStorage.length; i++) {
+   //    const key = localStorage.key(i);
+   //    const value = localStorage.getItem(key);
+   document.querySelector('#name').textContent = storedName;
+   document.querySelector('.character-img').src = storedImage;
+   document.querySelector('.dscrpt').textContent = storedDscrpt;
+      console.log(storedDscrpt)
+      
+    
     
     
   

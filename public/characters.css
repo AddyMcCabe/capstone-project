@@ -12,12 +12,6 @@ body {
     z-index: 0;
 }
 
-   .cards {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
 
 .card {
     display: grid;
