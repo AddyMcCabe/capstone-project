@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="characters.css">
+    <link rel="stylesheet" href="/characters.css">
     <title>Document</title>
 </head>
 <body>
     <button id="back-btn">Back</button> 
+    <br>
+    <br>
     <br>
     <br>     
         <article class="card">
@@ -16,15 +18,35 @@
                 <h2 id="name"></h2>
             </header>
             <img class="character-img" src="">
-            <div class="content">
                 <p class="dscrpt"></p>
-            </div>
             <footer>data from marvel api</footer>
         </article>
+        <br>
+        <br>
+        <button id="comics-btn">Comics</button>
+        <section class="container">
+            <div class="comic-card">
+                <div class="card-image">
+                    <h2 id="title"></h2>
+                    <p id="url"></p>
+                </div>
+            </div>
+            <div class="comic-card">
+                <div class="card-image">
+                    <h2 id="title2"></h2>
+                    <p id="url"></p>
+                </div>
+            </div>
+            <div class="comic-card">
+                <div class="card-image">
+                    <h2 id="title3"></h2>
+                    <p id="url"></p>
+                </div>
+            </div>
+        </section>
         
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="characters.js"></script>
+    <script src="/characters.js"></script>
 </body>
 </html>
 

@@ -13,12 +13,14 @@ function searchCharacter(event) {
         let characterDescription = res.data.data.results[0].description;
         let characterImage = res.data.data.results[0].thumbnail.path;
         
-        
+        if(characterName) {
          window.localStorage.setItem('name', characterName);
          window.localStorage.setItem('dscrpt', characterDescription);
          window.localStorage.setItem('img', characterImage);
          window.location.href = 'http://localhost:4005/characters'
-         
+        } else {
+            alert('character not found')
+        }
         hero.value = '';   
     })
 } 
