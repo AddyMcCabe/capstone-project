@@ -1,3 +1,108 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/characters.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="back-btn">Back</button> 
+    <br>
+    <br>
+    <br>
+    <br>     
+    <article class="card">
+            <section id="ratings-container">
+                <p id="rate-char"></p>
+                <div id="radio-container">
+                    <label for="one">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="1"
+                            id="one"/>
+                        1
+                    </label>
+                    <label for="two">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="2"
+                            id="two"/>
+                        2
+                    </label>
+                    <label for="three">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="3"
+                            id="three"/>
+                        3
+                    </label>
+                    <label for="four">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="4"
+                            id="four"/>
+                        4
+                    </label>
+                    <label for="five">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="5"
+                            id="five"/>
+                        5
+                    </label>
+                    <button type="button" onclick="checkButton()">submit</button>
+                </div>
+            </section>
+            <header>
+                <h2 id="name"></h2>
+            </header>
+            <img class="character-img" src="">
+                <p class="dscrpt"></p>
+                <br>
+            <footer>data from Marvel Developer Portal</footer>
+            <h2 id="disp"></h2>
+            <button id="comics-btn">Comics</button>
+        </article>
+        <br>
+        <br>
+        <section class="container">
+            <div class="comic-card">
+                <div class="card-image">
+                    <h2 id="title"></h2>
+                    <p id="url"></p>
+                </div>
+            </div>
+            <div class="comic-card">
+                <div class="card-image">
+                    <h2 id="title2"></h2>
+                    <image id="comic-url" src=""></image>
+                </div>
+            </div>
+            <div class="comic-card">
+                <div class="card-image">
+                    <h2 id="title3"></h2>
+                    <p id="url"></p>
+                </div>
+            </div>
+            <div class="comic-card">
+                <div class="card-image">
+                    <h2 id="title4"></h2>
+                    <p id="url"></p>
+                </div>
+            </div>
+        </section>
+        
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/characters.js"></script>
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +119,52 @@
     <br>
     <br>     
         <article class="card">
+            <section id="ratings-container">
+                <p id="rate-char"></p>
+                <div id="radio-container">
+                    <label for="one">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="1"
+                            id="one"/>
+                        1
+                    </label>
+                    <label for="two">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="2"
+                            id="two"/>
+                        2
+                    </label>
+                    <label for="three">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="3"
+                            id="three"/>
+                        3
+                    </label>
+                    <label for="four">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="4"
+                            id="four"/>
+                        4
+                    </label>
+                    <label for="five">
+                        <input class="rating"
+                            type="radio"
+                            name="ratings"
+                            value="5"
+                            id="five"/>
+                        5
+                    </label>
+                    <button type="button" onclick="checkButton()">submit</button>
+                </div>
+            </section>
             <header>
                 <h2 id="name"></h2>
             </header>
@@ -40,6 +191,12 @@
             <div class="comic-card">
                 <div class="card-image">
                     <h2 id="title3"></h2>
+                    <p id="url"></p>
+                </div>
+            </div>
+            <div class="comic-card">
+                <div class="card-image">
+                    <h2 id="title4"></h2>
                     <p id="url"></p>
                 </div>
             </div>

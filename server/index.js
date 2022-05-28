@@ -9,9 +9,9 @@ const app = express();
 const privateKey = (process.env.PRIVATE_KEY);
 const publicKey = (process.env.PUBLIC_KEY);
 const ts = 1;
-const hash = md5(ts, privateKey, publicKey)
+const hash = md5(ts, privateKey, publicKey);
 
-
+// const {createRating} = require('./controller.js');
 
 
 app.use(express.static(path.join(__dirname, '../public')));
@@ -20,6 +20,7 @@ app.get('/characters', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/characters.html'))
 })
 
+// app.post('/api/ratings', createRating);
 
 
 

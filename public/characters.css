@@ -1,4 +1,5 @@
- * {
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,9 +17,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
+    height: 700px;
     width: 500px;
-    color: white;
+    color: gold;
     justify-content: space-evenly;
 }
 
@@ -38,15 +39,17 @@ button {
     font-size: larger;
 }
 
+footer {
+    color: orange;
+}
+
 .container {
     display: flex;
-    /* justify-content: flex-end; */
-    /* justify-content: flex-end; */
     align-self: top;
 }
 
 .comic-card {
-    color: white;
+    color: gold;
     width: 220px;
     height: 400px;
     border-radius: 8px;
