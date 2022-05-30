@@ -57,3 +57,7 @@ footer {
     align-items: center;
     box-shadow: 4px, 4px, 15px, 2px, red;
 }
+
+#rating-display {
+    color: orangered;
+}

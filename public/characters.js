@@ -34,19 +34,33 @@ function getComics() {
       })
 }
 
+const getRatings = () => {
+   axios.get('http://localhost:4005/api/ratings/')
+   .then(res => {
+   let display = document.createElement('h2')
+   display.textContent = res.data
+   document.getElementById('rating-display').appendChild(display)
+   })
+}
 
-function checkButton() {
+
+function addRating() {
    const getSelectedValue = document.querySelector('input[name="ratings"]:checked');
 
-   if(getSelectedValue != null) {
-      axios.post('http://http://localhost:4005/api/ratings', {
-         rating: getSelectedValue.value,
-      })
-      .then((res) => {
-         console.log(res)
-      })
-   } 
-   
+   // if(getSelectedValue != null) {
+   //    axios.post('http://http://localhost:4005/api/ratings', {
+   //       rating: getSelectedValue.value
+   //    })
+   //    .then((res) => {
+   //       console.log(res)
+   //    })
+   // } 
+   axios.post('http://localhost:4005/api/ratings/', {newRating: getSelectedValue})
+   .then(res => {
+       alert(res.data)
+       
+
+   })
 }
 
 

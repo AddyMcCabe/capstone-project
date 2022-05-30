@@ -26,8 +26,5 @@ function searchCharacter(event) {
     })
 } 
 
- function createCard(data) {
-   
- }
 
 searchBtn.addEventListener('click', searchCharacter)
