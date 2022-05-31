@@ -1,20 +1,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/characters.css">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/characters.css">
+        <title>Document</title>
+    </head>
+    <body>
+     <section class="ratings-display-container">
+        <button type="button", onclick="getRatings()">Character Ratings</button>
+        <div id="rating-display"></div>
+    </section>
+    <section class="back-button-container">
     <button id="back-btn">Back</button> 
+    </section>
     <br>
     <br>
     <br>
-    <br>     
-        <article class="card">
+    <br> 
+      <section class="card-container">   
+        <div class="card">
             <section id="ratings-container">
                 <p id="rate-char"></p>
                 <div id="radio-container">
@@ -61,17 +68,19 @@
                     <button type="button" onclick="addRating()">submit</button>
                 </div>
             </section>
-            <button type="button", onclick="getRatings()">ratings</button>
             <header>
                 <h2 id="name"></h2>
             </header>
             <img class="character-img" src="">
                 <p class="dscrpt"></p>
             <footer>data from marvel api</footer>
-        </article>
+        </div>
+        </section>
         <br>
         <br>
+        <section class="comics-btn-container">
         <button id="comics-btn">Comics</button>
+        </section>
         <section class="container">
             <div class="comic-card">
                 <div class="card-image">
@@ -98,7 +107,6 @@
                 </div>
             </div>
         </section>
-        <div id="rating-display">character ratings</div>
         
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/characters.js"></script>

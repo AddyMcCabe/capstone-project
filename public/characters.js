@@ -37,7 +37,7 @@ function getComics() {
 const getRatings = () => {
    axios.get('http://localhost:4005/api/ratings/')
    .then(res => {
-   let display = document.createElement('h2')
+   let display = document.createElement('h1')
    display.textContent = res.data
    document.getElementById('rating-display').appendChild(display)
    })
@@ -55,11 +55,10 @@ function addRating() {
    //       console.log(res)
    //    })
    // } 
-   axios.post('http://localhost:4005/api/ratings/', {newRating: getSelectedValue})
+   axios.post('http://localhost:4005/api/ratings/', 
+   {newRating: getSelectedValue.value})
    .then(res => {
        alert(res.data)
-       
-
    })
 }
 
@@ -68,3 +67,4 @@ function addRating() {
 backBtn.addEventListener('click', backPage);
 getComicsBtn.addEventListener('click', getComics);
 displayCharacter();
+

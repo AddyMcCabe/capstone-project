@@ -5,22 +5,31 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+html {
     background-color: rgb(23, 22, 22);
-    background-image: url('images/shield-logo.jpg');
+    background-image: url('images/magneto-helm.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.card-container {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
 
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 700px;
+    height: 800px;
     width: 500px;
     color: gold;
-    justify-content: space-evenly;
+    margin: 20px;
+    border: solid;
+    border-color: black;
+    background-color: black;
+    border-radius: 8px;
 }
 
 .card img {
@@ -31,13 +40,6 @@ body {
     border-radius: 10px;
 } 
 
-button {
-    background-color: red;
-    height: 50px;
-    width: 70px;
-    border-radius: 15px;
-    font-size: larger;
-}
 
 footer {
     color: orange;
@@ -49,15 +51,91 @@ footer {
 }
 
 .comic-card {
-    color: gold;
+    color: purple;
+    background-color: gray;
     width: 220px;
-    height: 400px;
+    height: 100px;
     border-radius: 8px;
     margin: 10px;
     align-items: center;
     box-shadow: 4px, 4px, 15px, 2px, red;
 }
 
+.ratings-display-container {
+    display: flex;
+    justify-content: center;
+}
+
 #rating-display {
     color: orangered;
+    font-size: x-large;
 }
+
+.back-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 15px;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+
+.comics-btn-container {
+    display: flex;
+}
+
+#comics-btn {
+    margin: 20px;
+}
+
+
+
+
