@@ -16,7 +16,7 @@ function searchCharacter(event) {
          window.localStorage.setItem('name', characterName);
          window.localStorage.setItem('dscrpt', characterDescription);
          window.localStorage.setItem('img', characterImage);
-         window.location.href = 'http://localhost:4005/characters'
+         window.location.href = 'https://marvel-capstone-f22.herokuapp.com/characters'
         
         hero.value = '';   
     })

@@ -6,7 +6,7 @@ const storedImage = localStorage.getItem('img');
 const getComicsBtn = document.getElementById('comics-btn');
 
 function backPage() {
-   location.href = 'http://localhost:4005'
+   location.href = 'https://marvel-capstone-f22.herokuapp.com/'
 }
 
 function displayCharacter() {
@@ -35,7 +35,7 @@ function getComics() {
 }
 
 const getRatings = () => {
-   axios.get('http://localhost:4005/api/ratings/')
+   axios.get('https://marvel-capstone-f22.herokuapp.com/api/ratings/')
    .then(res => {
    let display = document.createElement('h1')
    display.textContent = res.data
@@ -55,7 +55,7 @@ function addRating() {
    //       console.log(res)
    //    })
    // } 
-   axios.post('http://localhost:4005/api/ratings/', 
+   axios.post('https://marvel-capstone-f22.herokuapp.com/api/ratings/', 
    {newRating: getSelectedValue.value})
    .then(res => {
        alert(res.data)
