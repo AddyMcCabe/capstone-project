@@ -20,7 +20,6 @@ function displayCharacter() {
 function getComics() {
    axios.get(`https://gateway.marvel.com/v1/public/characters?name=${storedName}&ts=1&apikey=b6b72ca54e82d39459344ac31c187566&hash=aea080d9b15055a44c83d8469af5da70`)
    .then((res) => {
-      console.log(res.data)
       let comics = res.data.data.results[0].comics.items[5].resourceURI;
       let comicName = res.data.data.results[0].comics.items[1].name;
       let comicName2 = res.data.data.results[0].comics.items[5].name;
@@ -39,31 +38,24 @@ const getRatings = () => {
    .then(res => {
    let display = document.createElement('h1')
    display.textContent = res.data
-   document.getElementById('rating-display').appendChild(display)
+   document.getElementById('rating-display').innerHTML='';
+   document.getElementById('rating-display').appendChild(display);
    })
 }
 
 
 function addRating() {
    const getSelectedValue = document.querySelector('input[name="ratings"]:checked');
-
-   // if(getSelectedValue != null) {
-   //    axios.post('http://http://localhost:4005/api/ratings', {
-   //       rating: getSelectedValue.value
-   //    })
-   //    .then((res) => {
-   //       console.log(res)
-   //    })
-   // } 
-   axios.post('https://marvel-capstone-f22.herokuapp.com/api/ratings/', 
-   {newRating: getSelectedValue.value})
+   
+   
+   axios.post('https://marvel-capstone-f22.herokuapp.com/api/ratings/', {rating: storedName + "'s rating is " + getSelectedValue.value})
    .then(res => {
        alert(res.data)
    })
 }
 
 
-// document.getElementById('disp').innerHTML = getSelectedValue.value
+
 backBtn.addEventListener('click', backPage);
 getComicsBtn.addEventListener('click', getComics);
 displayCharacter();

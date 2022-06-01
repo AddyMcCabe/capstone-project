@@ -22,7 +22,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 800px;
+    height: 900px;
     width: 500px;
     color: gold;
     margin: 20px;
@@ -61,9 +61,15 @@ footer {
     box-shadow: 4px, 4px, 15px, 2px, red;
 }
 
+.ratings-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 .ratings-display-container {
     display: flex;
     justify-content: center;
+    
 }
 
 #rating-display {
@@ -133,8 +139,8 @@ button:hover span {
     display: flex;
 }
 
-#comics-btn {
-    margin: 20px;
+.rating {
+    cursor: pointer;
 }
 
 

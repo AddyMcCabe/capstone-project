@@ -5,12 +5,12 @@ module.exports = {
     getRatings: (req, res) => {
         res.status(200).send(characterRatings);
     },
-
+    
     addRating: (req, res) => {
-        const {newRating} = req.body;
-
-        characterRatings.push(newRating);
-        res.status(200).send('rating added');
+        const {rating} = req.body;
+    
+                characterRatings.push(rating);
+                res.status(200).send('rating added');
     },
 
 }
